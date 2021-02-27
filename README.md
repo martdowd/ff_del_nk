@@ -5,7 +5,7 @@ C program to selectively delete cookies from a Firefox profile using sqlite3.
 ## Description
 
 The program deletes all cookies and application data from a Firefox
-profile, except those with "base domain" name belongs to a "keep list".
+profile, except those whose "base domain" name belongs to a "keep list".
 The program first performs a test to check if the profile is busy, which
 it will be if Firefox is running using the profile.
 
