@@ -25,3 +25,12 @@ and it's not unlikely that ff_del_nk can be compiled for Windows Firefox.
 ## Documentation
 
 The source code is "self-documenting".
+
+## Slackware current version.
+
+The format of the firefox cookies database changed somewhere between
+firefox version 68 and version 90, necessitating changes to ff_del_nk.c.
+The updated version is ff_del_nk.c.slackware_current.  Firefox seem
+to no longer delete the lock file.  ff_del_nk should be called from a
+script which checks if firefox is running.  An example is provided
+in source code comments.
